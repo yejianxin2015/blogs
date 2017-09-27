@@ -18,7 +18,7 @@ class TestController extends Controller
         }
         Redis::lpush('num',$num);
         $mykey = Redis::lrange('num',2,3);
-        dd($mykey);
+        dd($mykey);echo "ssss";
     }
 
     public function testQueue(){
