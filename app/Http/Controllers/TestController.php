@@ -24,5 +24,10 @@ class TestController extends Controller
     public function testQueue(){
         Log::info('调用时间：'.date('Y-m-d H:i:s'));
         $this->dispatch((new MakeLog())->delay(60));
+
+
+
+
+        
     }
 }
